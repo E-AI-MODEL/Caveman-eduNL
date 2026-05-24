@@ -1,0 +1,30 @@
+{
+  "name": "caveman-edunl-installer",
+  "version": "0.1.0",
+  "description": "Installer voor Caveman-eduNL: onderwijslaag voor caveman-NL.",
+  "license": "MIT",
+  "author": "E-AI-MODEL contributors",
+  "homepage": "https://github.com/E-AI-MODEL/Caveman-eduNL",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/E-AI-MODEL/Caveman-eduNL.git"
+  },
+  "bugs": {
+    "url": "https://github.com/E-AI-MODEL/Caveman-eduNL/issues"
+  },
+  "bin": {
+    "caveman-edunl": "./bin/install.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "files": [
+    "bin/",
+    "SKILL.md",
+    "commands/",
+    "rubrics/",
+    "ssot/",
+    "README.md",
+    "INSTALL.md"
+  ]
+}
