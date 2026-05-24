@@ -1,7 +1,7 @@
 # Caveman-eduNL – Holenman voor de klas
 
 Welkom in het holenklaslokaal.  
-Deze skill voegt een onderwijslaag toe aan `caveman-nl`.  
+Deze skill voegt een onderwijslaag toe aan [`caveman-NL`](https://github.com/E-AI-MODEL/caveman-NL).  
 De ingebouwde didactische filter is gebaseerd op een eigen set GAMMA-principes, ontwikkeld voor deze onderwijscontext.
 
 ## Waarom?
@@ -36,13 +36,19 @@ Caveman-eduNL/
 
 ## Installatie
 
-1. Zorg dat je `caveman-nl` hebt als basis-skill.
-2. Voeg `skill-caveman-edu.md` toe aan je LLM-interface, apart of als aanvulling op `caveman-nl`.
+1. Clone of installeer [`caveman-NL`](https://github.com/E-AI-MODEL/caveman-NL) als basis-skill.
+2. Voeg `skill-caveman-edu.md` toe aan je LLM-interface, apart of als aanvulling op `skill-caveman-nl.md`.
 3. Optioneel: importeer `ssot/caveman-edu.yaml` in je eigen tools.
+
+## Afhankelijkheid
+
+Deze repo is de onderwijslaag. De basislaag staat hier:
+
+- [`E-AI-MODEL/caveman-NL`](https://github.com/E-AI-MODEL/caveman-NL)
 
 ## Credits
 
-- Holenman-architectuur: gebaseerd op [echohive42/caveman](https://github.com/echohive42/caveman), vertaald en uitgebreid in `caveman-nl`.
+- Holenman-architectuur: gebaseerd op [echohive42/caveman](https://github.com/echohive42/caveman), vertaald en uitgebreid in `caveman-NL`.
 - Didactisch model: eigen ontwikkeling voor `Caveman-eduNL`.
 
 ---
