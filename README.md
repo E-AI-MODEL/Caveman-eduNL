@@ -46,9 +46,16 @@ Deze repo is de onderwijslaag. De basislaag staat hier:
 
 - [`E-AI-MODEL/caveman-NL`](https://github.com/E-AI-MODEL/caveman-NL)
 
+## Herkomst
+
+- Originele maker van caveman: [Julius Brussee](https://github.com/JuliusBrussee)
+- Originele repo: [JuliusBrussee/caveman](https://github.com/JuliusBrussee/caveman)
+- Deze repo: Nederlandstalige onderwijsvariant bovenop `caveman-NL`
+
 ## Credits
 
-- Holenman-architectuur: gebaseerd op [echohive42/caveman](https://github.com/echohive42/caveman), vertaald en uitgebreid in `caveman-NL`.
+- Caveman-concept: Julius Brussee.
+- NL-variant en onderwijslaag: deze repo's.
 - Didactisch model: eigen ontwikkeling voor `Caveman-eduNL`.
 
 ---
