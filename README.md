@@ -10,18 +10,61 @@ Holenman-praat is krachtig, maar in het onderwijs kan te veel compressie schadel
 Een leerling die de helft van de uitleg mist, bouwt schijnbegrip op.  
 Deze skill zorgt dat je slim comprimeert: waar het kan, maar niet waar het leren schaadt.
 
+## Snel starten
+
+Installeer eerst de basislaag:
+
+```bash
+npx -y github:E-AI-MODEL/caveman-NL -- --with-init
+```
+
+Installeer daarna deze onderwijslaag:
+
+```bash
+npx -y github:E-AI-MODEL/Caveman-eduNL -- --with-init
+```
+
+Dit kopieert de onderwijs-skill naar:
+
+```text
+~/.caveman-nl/skills/caveman-edunl/SKILL.md
+```
+
+Met `--with-init` schrijft de installer ook een blok naar `AGENTS.md` in je huidige repo.
+
+## Gebruik
+
+```text
+/caveman-teach fotosynthese
+/caveman-check "Waarom heeft een plant licht nodig?"
+/caveman-scaffold zwaartekracht
+```
+
 ## Wat kun je ermee?
 
 - **/caveman-teach** – didactisch verantwoorde uitleg, automatisch met scaffolding.
 - **/caveman-check** – stel checkvragen en ontmasker schijnbegrip.
 - **/caveman-scaffold** – bied uitleg in drie niveaus: vol, vuur, speer.
 - **Leerling-modus** – veilig, volledig waar nodig.
-- **Docent-modus** – krachtige compressie voor eigen gebruik.
+- **Docent-modus** – krachtige compressie voor eigen hergebruik.
+
+## Wat zit erin?
+
+- `SKILL.md` – echte skill-entrypoint met YAML-frontmatter
+- `bin/install.js` – Node-installer
+- `install.sh` en `install.ps1` – lokale shims
+- `package.json` – npx/bin metadata
+- `commands/` – commanddocumentatie
+- `rubrics/gamma-filter.md` – didactisch filter
+- `ssot/caveman-edu.yaml` – specificatie
 
 ## Structuur
 
 ```text
 Caveman-eduNL/
+├── SKILL.md
+├── bin/
+│   └── install.js
 ├── ssot/
 │   └── caveman-edu.yaml
 ├── skill-caveman-edu.md
@@ -31,14 +74,17 @@ Caveman-eduNL/
 │   └── caveman-scaffold.md
 ├── rubrics/
 │   └── gamma-filter.md
+├── package.json
+├── install.sh
+├── install.ps1
 └── README.md
 ```
 
-## Installatie
+## Verwijderen
 
-1. Clone of installeer [`caveman-NL`](https://github.com/E-AI-MODEL/caveman-NL) als basis-skill.
-2. Voeg `skill-caveman-edu.md` toe aan je LLM-interface, apart of als aanvulling op `skill-caveman-nl.md`.
-3. Optioneel: importeer `ssot/caveman-edu.yaml` in je eigen tools.
+```bash
+npx -y github:E-AI-MODEL/Caveman-eduNL -- --uninstall
+```
 
 ## Afhankelijkheid
 
